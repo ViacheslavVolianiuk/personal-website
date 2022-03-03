@@ -102,7 +102,7 @@ const BlogPage = () => {
             </Grid>
           </Center>
 
-          <BigTitle text="" top="5rem" left="5rem" />
+          <BigTitle text="CERTS" top="5rem" left="5rem" />
         </Container>
       </MainContainer>
     </Suspense>
