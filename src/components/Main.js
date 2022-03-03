@@ -233,7 +233,7 @@ const Main = () => {
             <Contact
               click={+click}
               target="_blank"
-              to={{ pathname: "mailto:codebucks27@gmail.com" }}
+              to={{ pathname: "mailto:viacheslav.volyanuk@gmail.com" }}
             >
               <motion.h3
                 initial={{
@@ -254,7 +254,7 @@ const Main = () => {
             <Contact
               click={+false}
               target="_blank"
-              to={{ pathname: "mailto:codebucks27@gmail.com" }}
+              to={{ pathname: "mailto:viacheslav.volyanuk@gmail.com" }}
             >
               <motion.h3
                 initial={{
@@ -287,7 +287,7 @@ const Main = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                Blog
+                Cert
               </motion.h2>
             </BLOG>
           ) : (
@@ -304,7 +304,7 @@ const Main = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                Blog
+                Cert
               </motion.h2>
             </BLOG>
           )}
