@@ -26,14 +26,15 @@ export const Blogs = [
       "https://res.cloudinary.com/slavavolya/image/upload/c_scale,h_420,w_900/v1646237779/sql-interview-questions-logo_bcpkfy.jpg",
     link: "https://www.udemy.com/certificate/UC-0ee11856-310a-4d7a-948c-3ade7f800b01/",
   },
-  // {
-  //     id:4,
-  //     name:"How to build a Fabulous Todo App using React, Redux and Framer-Motion",
-  //     tags:["react","redux","framer-motion"],
-  //     date:"26 May, 2021",
-  //     imgSrc:"https://res.cloudinary.com/practicaldev/image/fetch/s--r5oUDhhT--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/036s7j5b73up7455rdth.png",
-  //     link:"https://dev.to/codebucks/build-redux-react-todo-list-app-with-animations-using-framer-motion-1mp1"
-  // },
+  {
+    id: 4,
+    name: "Modern JavaScript (Complete guide, from Novice to Ninja)",
+    tags: ["JavaScript", "Firebase", "Webpack"],
+    date: "26 May, 2021",
+    imgSrc:
+      "https://res.cloudinary.com/slavavolya/image/upload/c_scale,h_420,w_900/v1647627950/Quoi-de-neuf-dans-la-norme-ES2021-pour-JavaScript-_w2j6lo.jpg",
+    link: "https://www.udemy.com/certificate/UC-17556cc6-81be-40cd-8d1b-d31ea5865738/",
+  },
   // {
   //     id:5,
   //     name:"What is Higher Order Component (HOC) in React JS?",
