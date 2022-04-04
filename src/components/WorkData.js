@@ -13,7 +13,7 @@ export const Work = [
     id: 2,
     name: "Bank website",
     description: "Advanced DOM and Events Javascript course section's project",
-    tags: ["react", "sass"],
+    tags: ["HTML", "CSS", "JavaScript"],
 
     demo: "https://viacheslavvolyanuk.github.io/bank-website/",
     github: "https://github.com/ViacheslavVolyanuk/bank-website",
