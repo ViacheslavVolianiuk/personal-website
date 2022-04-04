@@ -11,13 +11,12 @@ export const Work = [
   },
   {
     id: 2,
-    name: "Job listing website",
-    description:
-      "A Job listing website build in ReactJS. With searching and filtering functionalities.",
+    name: "Bank website",
+    description: "Advanced DOM and Events Javascript course section's project",
     tags: ["react", "sass"],
 
-    demo: "http://react-job-listing-website.codebucks27.vercel.app/",
-    github: "https://github.com/codebucks27/react-job-listing-website",
+    demo: "https://viacheslavvolyanuk.github.io/bank-website/",
+    github: "https://github.com/ViacheslavVolyanuk/bank-website",
   },
   {
     id: 3,
