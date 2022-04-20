@@ -35,14 +35,15 @@ export const Blogs = [
       "https://res.cloudinary.com/slavavolya/image/upload/c_scale,h_420,w_900/v1647627950/Quoi-de-neuf-dans-la-norme-ES2021-pour-JavaScript-_w2j6lo.jpg",
     link: "https://www.udemy.com/certificate/UC-17556cc6-81be-40cd-8d1b-d31ea5865738/",
   },
-  // {
-  //     id:5,
-  //     name:"What is Higher Order Component (HOC) in React JS?",
-  //     tags:["react","reactJS","web-development"],
-  //     date:"3 Feb, 2021",
-  //     imgSrc:"https://codebucks.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1625295480148%2FlyKj8bpHK.jpeg%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
-  //     link:"https://codebucks.hashnode.dev/what-is-higher-order-component"
-  // },
+  {
+    id: 5,
+    name: "The Complete JavaScript Course 2022: From Zero to Expert!",
+    tags: ["JavaScript", "Parcel", "Web-Development"],
+    date: "3 Feb, 2021",
+    imgSrc:
+      "https://res.cloudinary.com/slavavolya/image/upload/c_scale,h_420,w_900/v1650459433/C3_sa2ysa.png",
+    link: "https://www.udemy.com/certificate/UC-877fbe1f-e1b3-49c1-bd03-84a29b41176a/",
+  },
   // {
   //     id:6,
   //     name:"How to implement Pagination Component in React from scratch",
