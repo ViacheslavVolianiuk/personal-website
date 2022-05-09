@@ -20,13 +20,12 @@ export const Work = [
   },
   {
     id: 3,
-    name: "Dev.to Clone",
-    description:
-      "A clone of Dev.to build using ReactJS. With realtime fetching of articles from dev.to using API.",
-    tags: ["react", "api", "sass"],
+    name: "Natours Project",
+    description: "Natours project website build using advanced CSS and Sass",
+    tags: ["CSS", "Sass", "Responsive design"],
 
-    demo: "http://devto-clone-codebucks27.vercel.app/",
-    github: "https://github.com/codebucks27/devto-clone",
+    demo: "https://viacheslavvolyanuk.github.io/natours-website/",
+    github: "https://github.com/ViacheslavVolyanuk/natours-website",
   },
   {
     id: 4,
