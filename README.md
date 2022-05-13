@@ -1,1 +1,1 @@
-https://slava-website.netlify.app/
+https://viacheslav-volianiuk.netlify.app
