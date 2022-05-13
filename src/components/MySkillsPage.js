@@ -164,6 +164,28 @@ const MySkillsPage = () => {
 
           <Main>
             <Title>
+              <Design width={40} height={40} /> Designer
+            </Title>
+            <Description>
+              I love to create design which speaks, Keep it clean, minimal and
+              simple.
+            </Description>
+            <Description>
+              <strong>I like to Design</strong> <br />
+              <ul>
+                <li>Web Design</li>
+                <li>Mobile Apps</li>
+              </ul>
+            </Description>
+            <Description>
+              <strong>Tools</strong> <br />
+              <ul>
+                <li>Figma</li>
+              </ul>
+            </Description>
+          </Main>
+          <Main>
+            <Title>
               <Develope width={40} height={40} /> Frontend Developer
             </Title>
             <Description>I enjoy bringing new ideas to life.</Description>
