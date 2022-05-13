@@ -7,7 +7,7 @@ export const Work = [
     tags: ["HTML", "CSS"],
 
     demo: "https://omnifood-slava.netlify.app/",
-    github: "https://github.com/ViacheslavVolyanuk/omnifood-project",
+    github: "https://github.com/ViacheslavVolianiuk/omnifood-project",
   },
   {
     id: 2,
@@ -15,8 +15,8 @@ export const Work = [
     description: "Advanced DOM and Events Javascript course section's project",
     tags: ["HTML", "CSS", "JavaScript"],
 
-    demo: "https://viacheslavvolyanuk.github.io/bank-website/",
-    github: "https://github.com/ViacheslavVolyanuk/bank-website",
+    demo: "https://viacheslavvolianiuk.github.io/bank-website/",
+    github: "https://github.com/ViacheslavVolianiuk/bank-website",
   },
   {
     id: 3,
@@ -24,18 +24,17 @@ export const Work = [
     description: "Natours project website build using advanced CSS and Sass",
     tags: ["CSS", "Sass", "Responsive design"],
 
-    demo: "https://viacheslavvolyanuk.github.io/natours-website/",
-    github: "https://github.com/ViacheslavVolyanuk/natours-website",
+    demo: "https://viacheslavvolianiuk.github.io/natours-website/",
+    github: "https://github.com/ViacheslavVolianiuk/natours-website",
   },
   {
     id: 4,
-    name: "Sidebar Menu",
-    description:
-      "A cool looking sidebar menu build using ReactJS and styledComponents.It has really smooth animations.",
-    tags: ["react", "styledComponents", "react-router"],
+    name: "Trillo Website",
+    description: "A simple looking website ",
+    tags: ["CSS", "Sass", "Responsive design"],
 
-    demo: "https://react-sidebar.vercel.app/",
-    github: "https://github.com/codebucks27/react-sidebar",
+    demo: "https://viacheslavvolianiuk.github.io/trillo-website/",
+    github: "https://github.com/ViacheslavVolianiuk/trillo-website",
   },
   {
     id: 5,
