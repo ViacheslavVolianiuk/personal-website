@@ -39,20 +39,20 @@ export const Blogs = [
     id: 5,
     name: "The Complete JavaScript Course 2022: From Zero to Expert!",
     tags: ["JavaScript", "Parcel", "Web-Development"],
-    date: "3 Feb, 2021",
+    date: "",
     imgSrc:
       "https://res.cloudinary.com/slavavolya/image/upload/c_scale,h_420,w_900/v1650459433/C3_sa2ysa.png",
     link: "https://www.udemy.com/certificate/UC-877fbe1f-e1b3-49c1-bd03-84a29b41176a/",
   },
-  // {
-  //     id:6,
-  //     name:"How to implement Pagination Component in React from scratch",
-  //     tags:["react","css"],
-  //     date:"5 Jan, 2021",
-  //     imgSrc:"https://codebucks.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1625240050668%2FGAya9b0XK.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
-  //     link:"https://codebucks.hashnode.dev/pagination-in-react"
-
-  // },
+  {
+    id: 6,
+    name: "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
+    tags: ["HTML", "CSS", "Sass"],
+    date: "",
+    imgSrc:
+      "https://res.cloudinary.com/slavavolya/image/upload/c_scale,h_420,w_900/v1652977247/C4_sakn9k.png",
+    link: "https://www.udemy.com/certificate/UC-921a036a-93b1-41e1-ab3f-58eaa388dfc6/",
+  },
 
   // {
   //     id:7,
