@@ -1,7 +1,7 @@
 export const Work = [
   {
     id: 1,
-    name: "Omnifood website",
+    name: "Omnifood Website",
     description:
       "It is a final project of the course 'Build Responsive Real-World Websites with HTML and CSS'",
     tags: ["HTML", "CSS"],
@@ -11,7 +11,7 @@ export const Work = [
   },
   {
     id: 2,
-    name: "Bank website",
+    name: "Bank Website",
     description: "Advanced DOM and Events Javascript course section's project",
     tags: ["HTML", "CSS", "JavaScript"],
 
@@ -38,13 +38,13 @@ export const Work = [
   },
   {
     id: 5,
-    name: "Todo App(React + Redux)",
+    name: "Nexter Website",
     description:
-      "A todo app build using Redux-toolkit and framer-motion for smooth animations.",
-    tags: ["react", "redux", "framer-motion"],
+      "Final project of the course 'Advanced CSS and Sass: Flexbox, Grid, Animations and More'",
+    tags: ["CSS", "Sass", "Responsive design"],
 
-    demo: "http://react-redux-todo-app-git-main-codebucks27.vercel.app/",
-    github: "https://github.com/codebucks27/React-Redux-Todo-App",
+    demo: "https://viacheslavvolianiuk.github.io/nexter-website/",
+    github: "https://github.com/ViacheslavVolianiuk/nexter-website",
   },
   {
     id: 6,
