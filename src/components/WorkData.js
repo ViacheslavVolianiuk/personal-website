@@ -56,4 +56,13 @@ export const Work = [
     demo: 'https://feedback-app-slava.netlify.app/',
     github: 'https://github.com/ViacheslavVolianiuk/feedback-app',
   },
+  {
+    id: 7,
+    name: 'Expenses App',
+    description: 'A simple and reponsive expenses app.',
+    tags: ['react', 'Responsive design', 'css'],
+
+    demo: 'https://expenses-app-slava.netlify.app/',
+    github: 'https://github.com/ViacheslavVolianiuk/expenses-app',
+  },
 ];
