@@ -295,7 +295,11 @@ const Main = () => {
               </motion.h2>
             </BLOG>
           ) : (
-            <BLOG click={+false} onClick={() => setpath('blog')} to="/blog">
+            <BLOG
+              click={+false}
+              onClick={() => setpath('certificates')}
+              to="/certificates"
+            >
               <motion.h2
                 initial={{
                   y: -200,
