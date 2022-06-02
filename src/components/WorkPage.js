@@ -1,25 +1,25 @@
-import { motion } from "framer-motion";
-import { useEffect, useRef, lazy, Suspense } from "react";
+import { motion } from 'framer-motion';
+import { useEffect, useRef, lazy, Suspense } from 'react';
 
-import styled, { ThemeProvider } from "styled-components";
+import styled, { ThemeProvider } from 'styled-components';
 
-import { YinYang } from "./AllSvgs";
-import { Work } from "./WorkData";
-import { DarkTheme, mediaQueries } from "./Themes";
+import { YinYang } from './AllSvgs';
+import { Work } from './WorkData';
+import { DarkTheme, mediaQueries } from './Themes';
 
-import Card from "../subComponents/Card";
-import Loading from "../subComponents/Loading";
+import Card from '../subComponents/Card';
+import Loading from '../subComponents/Loading';
 
-const SocialIcons = lazy(() => import("../subComponents/SocialIcons"));
-const PowerButton = lazy(() => import("../subComponents/PowerButton"));
-const LogoComponent = lazy(() => import("../subComponents/LogoComponent"));
-const BigTitle = lazy(() => import("../subComponents/BigTitle"));
+const SocialIcons = lazy(() => import('../subComponents/SocialIcons'));
+const PowerButton = lazy(() => import('../subComponents/PowerButton'));
+const LogoComponent = lazy(() => import('../subComponents/LogoComponent'));
+const BigTitle = lazy(() => import('../subComponents/BigTitle'));
 
 const Box = styled(motion.div)`
   background-color: ${(props) => props.theme.body};
   position: relative;
   display: flex;
-  height: 400vh;
+  height: 500vh;
 `;
 
 const Main = styled(motion.ul)`
@@ -111,12 +111,12 @@ const WorkPage = () => {
       element.style.transform = `translateX(${-window.pageYOffset}px)`;
 
       return (yinyang.current.style.transform =
-        "rotate(" + -window.pageYOffset + "deg)");
+        'rotate(' + -window.pageYOffset + 'deg)');
     };
 
-    window.addEventListener("scroll", rotate);
+    window.addEventListener('scroll', rotate);
     return () => {
-      window.removeEventListener("scroll", rotate);
+      window.removeEventListener('scroll', rotate);
     };
   }, []);
 
