@@ -1,18 +1,18 @@
-import styled, { keyframes } from "styled-components";
-import { NavLink } from "react-router-dom";
-import { lazy, Suspense, useState } from "react";
-import { motion } from "framer-motion";
+import styled, { keyframes } from 'styled-components';
+import { NavLink } from 'react-router-dom';
+import { lazy, Suspense, useState } from 'react';
+import { motion } from 'framer-motion';
 
 //Components
-import { YinYang } from "./AllSvgs";
-import Intro from "./Intro";
-import Loading from "../subComponents/Loading";
-import { mediaQueries } from "./Themes";
+import { YinYang } from './AllSvgs';
+import Intro from './Intro';
+import Loading from '../subComponents/Loading';
+import { mediaQueries } from './Themes';
 
-const PowerButton = lazy(() => import("../subComponents/PowerButton"));
-const SocialIcons = lazy(() => import("./../subComponents/SocialIcons"));
+const PowerButton = lazy(() => import('../subComponents/PowerButton'));
+const SocialIcons = lazy(() => import('./../subComponents/SocialIcons'));
 
-const LogoComponent = lazy(() => import("./../subComponents/LogoComponent"));
+const LogoComponent = lazy(() => import('./../subComponents/LogoComponent'));
 
 //   import SocialIcons from './../subComponents/SocialIcons';
 // import LogoComponent from './../subComponents/LogoComponent';
@@ -29,7 +29,7 @@ const MainContainer = styled(motion.div)`
   h4,
   h5,
   h6 {
-    font-family: "Karla", sans-serif;
+    font-family: 'Karla', sans-serif;
 
     font-weight: 500;
   }
@@ -61,8 +61,8 @@ from {
 `;
 const Center = styled.button`
   position: absolute;
-  top: ${(props) => (props.click ? "85%" : "50%")};
-  left: ${(props) => (props.click ? "92%" : "50%")};
+  top: ${(props) => (props.click ? '85%' : '50%')};
+  left: ${(props) => (props.click ? '92%' : '50%')};
   transform: translate(-50%, -50%);
   border: none;
   outline: none;
@@ -76,19 +76,19 @@ const Center = styled.button`
     animation: ${rotate} infinite 1.5s linear;
   }
   & > *:last-child {
-    display: ${(props) => (props.click ? "none" : "inline-block")};
+    display: ${(props) => (props.click ? 'none' : 'inline-block')};
     padding-top: 1rem;
   }
 
   @media only screen and (max-width: 50em) {
-    top: ${(props) => (props.click ? "90%" : "50%")};
-    left: ${(props) => (props.click ? "90%" : "50%")};
-    width: ${(props) => (props.click ? "80px" : "150px")};
-    height: ${(props) => (props.click ? "80px" : "150px")};
+    top: ${(props) => (props.click ? '90%' : '50%')};
+    left: ${(props) => (props.click ? '90%' : '50%')};
+    width: ${(props) => (props.click ? '80px' : '150px')};
+    height: ${(props) => (props.click ? '80px' : '150px')};
   }
   @media only screen and (max-width: 30em) {
-    width: ${(props) => (props.click ? "40px" : "150px")};
-    height: ${(props) => (props.click ? "40px" : "150px")};
+    width: ${(props) => (props.click ? '40px' : '150px')};
+    height: ${(props) => (props.click ? '40px' : '150px')};
   }
 `;
 
@@ -110,7 +110,7 @@ const BLOG = styled(NavLink)`
 
   text-decoration: none;
   @media only screen and (max-width: 50em) {
-    text-shadow: ${(props) => (props.click ? "0 0 4px #000" : "none")};
+    text-shadow: ${(props) => (props.click ? '0 0 4px #000' : 'none')};
   }
 `;
 const WORK = styled(NavLink)`
@@ -122,7 +122,7 @@ const WORK = styled(NavLink)`
   z-index: 1;
   text-decoration: none;
   @media only screen and (max-width: 50em) {
-    text-shadow: ${(props) => (props.click ? "0 0 4px #000" : "none")};
+    text-shadow: ${(props) => (props.click ? '0 0 4px #000' : 'none')};
   }
 `;
 const BottomBar = styled.div`
@@ -150,9 +150,9 @@ const DarkDiv = styled.div`
   top: 0;
   bottom: 0;
   right: 50%;
-  width: ${(props) => (props.click ? "50%" : "0%")};
+  width: ${(props) => (props.click ? '50%' : '0%')};
   background-color: #000000;
-  height: ${(props) => (props.click ? "100%" : "0%")};
+  height: ${(props) => (props.click ? '100%' : '0%')};
   transition: height 0.5s ease, width 1s ease 0.5s;
   z-index: 1;
 
@@ -179,17 +179,17 @@ Music by <a href="/users/wataboi-12344345/?tab=audio&amp;utm_source=link-attribu
 
 const Main = () => {
   const [click, setClick] = useState(false);
-  const [path, setpath] = useState("");
+  const [path, setpath] = useState('');
 
   const handleClick = () => setClick(!click);
 
   const moveY = {
-    y: "-100%",
+    y: '-100%',
   };
   const moveX = {
-    x: `${path === "work" ? "100%" : "-100%"}`,
+    x: `${path === 'work' ? '100%' : '-100%'}`,
   };
-  const mq = window.matchMedia("(max-width: 50em)").matches;
+  const mq = window.matchMedia('(max-width: 50em)').matches;
 
   return (
     <Suspense fallback={<Loading />}>
@@ -197,17 +197,17 @@ const Main = () => {
         key="modal"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        exit={path === "about" || path === "skills" ? moveY : moveX}
+        exit={path === 'about' || path === 'skills' ? moveY : moveX}
         transition={{ duration: 0.5 }}
       >
         <DarkDiv click={click} />
         <Container>
-          <LogoComponent theme={click ? "dark" : "light"} />
+          <LogoComponent theme={click ? 'dark' : 'light'} />
           <PowerButton />
           {mq ? (
             <SocialIcons theme="light" />
           ) : (
-            <SocialIcons theme={click ? "dark" : "light"} />
+            <SocialIcons theme={click ? 'dark' : 'light'} />
           )}
           <Center click={click}>
             {mq ? (
@@ -233,16 +233,16 @@ const Main = () => {
             <Contact
               click={+click}
               target="_blank"
-              to={{ pathname: "mailto:viacheslav.volyanuk@gmail.com" }}
+              to={{ pathname: 'mailto:viacheslav.volyanuk@gmail.com' }}
             >
               <motion.h3
                 initial={{
                   y: -200,
-                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                  transition: { type: 'spring', duration: 1.5, delay: 1 },
                 }}
                 animate={{
                   y: 0,
-                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                  transition: { type: 'spring', duration: 1.5, delay: 1 },
                 }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -254,16 +254,16 @@ const Main = () => {
             <Contact
               click={+false}
               target="_blank"
-              to={{ pathname: "mailto:viacheslav.volyanuk@gmail.com" }}
+              to={{ pathname: 'mailto:viacheslav.volyanuk@gmail.com' }}
             >
               <motion.h3
                 initial={{
                   y: -200,
-                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                  transition: { type: 'spring', duration: 1.5, delay: 1 },
                 }}
                 animate={{
                   y: 0,
-                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                  transition: { type: 'spring', duration: 1.5, delay: 1 },
                 }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -274,15 +274,19 @@ const Main = () => {
           )}
 
           {mq ? (
-            <BLOG click={+click} onClick={() => setpath("blog")} to="/blog">
+            <BLOG
+              click={+click}
+              onClick={() => setpath('certificates')}
+              to="/certificates"
+            >
               <motion.h2
                 initial={{
                   y: -200,
-                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                  transition: { type: 'spring', duration: 1.5, delay: 1 },
                 }}
                 animate={{
                   y: 0,
-                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                  transition: { type: 'spring', duration: 1.5, delay: 1 },
                 }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -291,15 +295,15 @@ const Main = () => {
               </motion.h2>
             </BLOG>
           ) : (
-            <BLOG click={+false} onClick={() => setpath("blog")} to="/blog">
+            <BLOG click={+false} onClick={() => setpath('blog')} to="/blog">
               <motion.h2
                 initial={{
                   y: -200,
-                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                  transition: { type: 'spring', duration: 1.5, delay: 1 },
                 }}
                 animate={{
                   y: 0,
-                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                  transition: { type: 'spring', duration: 1.5, delay: 1 },
                 }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -311,14 +315,14 @@ const Main = () => {
 
           <WORK click={+click} to="/work">
             <motion.h2
-              onClick={() => setpath("work")}
+              onClick={() => setpath('work')}
               initial={{
                 y: -200,
-                transition: { type: "spring", duration: 1.5, delay: 1 },
+                transition: { type: 'spring', duration: 1.5, delay: 1 },
               }}
               animate={{
                 y: 0,
-                transition: { type: "spring", duration: 1.5, delay: 1 },
+                transition: { type: 'spring', duration: 1.5, delay: 1 },
               }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -334,14 +338,14 @@ const Main = () => {
               to="/about"
             >
               <motion.h2
-                onClick={() => setpath("about")}
+                onClick={() => setpath('about')}
                 initial={{
                   y: 200,
-                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                  transition: { type: 'spring', duration: 1.5, delay: 1 },
                 }}
                 animate={{
                   y: 0,
-                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                  transition: { type: 'spring', duration: 1.5, delay: 1 },
                 }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -352,14 +356,14 @@ const Main = () => {
 
             <SKILLS to="/skills">
               <motion.h2
-                onClick={() => setpath("skills")}
+                onClick={() => setpath('skills')}
                 initial={{
                   y: 200,
-                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                  transition: { type: 'spring', duration: 1.5, delay: 1 },
                 }}
                 animate={{
                   y: 0,
-                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                  transition: { type: 'spring', duration: 1.5, delay: 1 },
                 }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
