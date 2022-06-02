@@ -65,4 +65,13 @@ export const Work = [
     demo: 'https://expenses-app-slava.netlify.app/',
     github: 'https://github.com/ViacheslavVolianiuk/expenses-app',
   },
+  {
+    id: 8,
+    name: 'Cats pinterest',
+    description: 'A test task from uchi.ru company',
+    tags: ['react', 'Responsive design', 'react-router'],
+
+    demo: 'https://uchi-ru-task-slava.netlify.app/',
+    github: 'https://github.com/ViacheslavVolianiuk/uchi-ru-cats-app',
+  },
 ];
