@@ -192,7 +192,7 @@ const MySkillsPage = () => {
             <Description>
               <strong>Skills</strong> <br />
               <p>
-                Html, Css, Js, React, Redux, Sass, Bootstrap, Tailwind, SQL,
+                Html, Css, Js, React, Redux, Sass, Tailwind, SQL,
                 Firebase etc.
               </p>
             </Description>
