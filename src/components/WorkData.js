@@ -74,4 +74,13 @@ export const Work = [
     demo: 'https://uchi-ru-task-slava.netlify.app/',
     github: 'https://github.com/ViacheslavVolianiuk/uchi-ru-cats-app',
   },
+  {
+    id: 9,
+    name: 'Memory-game',
+    description: 'Card matching game',
+    tags: ['react', 'Responsive design', 'css'],
+
+    demo: ' https://memory-game-slava.netlify.app',
+    github: 'https://github.com/ViacheslavVolianiuk/memory-game',
+  },
 ];
