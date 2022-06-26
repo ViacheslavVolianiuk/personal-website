@@ -30,7 +30,7 @@ export const Blogs = [
     id: 4,
     name: 'Modern JavaScript (Complete guide, from Novice to Ninja)',
     tags: ['JavaScript', 'Firebase', 'Webpack'],
-    date: '26 May, 2021',
+    date: '',
     imgSrc:
       'https://res.cloudinary.com/slavavolya/image/upload/c_scale,h_420,w_900/v1647627950/Quoi-de-neuf-dans-la-norme-ES2021-pour-JavaScript-_w2j6lo.jpg',
     link: 'https://www.udemy.com/certificate/UC-17556cc6-81be-40cd-8d1b-d31ea5865738/',
