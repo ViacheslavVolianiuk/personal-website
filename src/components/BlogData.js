@@ -58,7 +58,7 @@ export const Blogs = [
     id: 7,
     name: 'Build Web Apps with React & Firebase',
     tags: ['react', 'firebase', 'javascript'],
-    date: '16 May, 2021',
+    date: '',
     imgSrc:
       'https://res.cloudinary.com/slavavolya/image/upload/c_scale,h_420,w_900/v1656261152/1_SzrSsS1stZQ7ipYObndbAw_qoxrmp.png',
     link: 'https://www.udemy.com/certificate/UC-03565240-637e-4057-9f60-48123838c340/',
